@@ -1,5 +1,6 @@
+import "dotenv/config";
 import express from 'express';
-import { prisma } from '@repo/db';  // coming from packages section prisma
+import { prisma } from '@repo/db'; // coming from packages section prisma
 const app = express();
 app.use(express.json());
 
@@ -21,4 +22,4 @@ app.post('/signup', async(req, res)=>{
     })
 });
 
-app.listen(3000);
+app.listen(3002);
